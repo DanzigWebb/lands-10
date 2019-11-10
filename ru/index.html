@@ -14,7 +14,7 @@
 		href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
 		rel="stylesheet">
 	<link rel="stylesheet" href="styles/css/main.css">
-
+	<link rel="stylesheet" href="libs/Animate.css">
 </head>
 
 <body>
@@ -38,21 +38,21 @@
 			<p>ЛУЧШИЙ ПОДАРОК <br> РЕБЕНКУ НА НОВЫЙ ГОД!</p>
 		</div>
 		<div class="main__builets">
-			<div class="main__item">
+			<div class="main__item wow fadeInLeft">
 				<img src="img/icon_1.svg" alt="">
 				<p>Совместим со всеми <br> устройствами</p>
 			</div>
-			<div class="main__item">
+			<div class="main__item wow fadeInLeft" data-wow-delay="0.5s">
 				<img src="img/icon_2.svg" alt="">
 				<p>Гарантия качества</p>
 			</div>
-			<div class="main__item">
+			<div class="main__item wow fadeInLeft" data-wow-delay="1s">
 				<img src="img/icon_3.svg" alt="">
 				<p>Оплата при получении</p>
 			</div>
 		</div>
 	</header>
-	<div class="offer">
+	<div class="offer wow fadeInUp">
 		<div class="offer__title">
 			Заполни форму <br>
 			и получи 50% скидку
@@ -123,18 +123,18 @@
 			<div class="heading__hr"></div>
 		</div>
 		<div class="sect3__content">
-			<div class="sect3__item">
+			<div class="sect3__item wow zoomIn">
 				<img src="img/block_4_1.png" alt="">
 				<p><span class="prod">UltimateControl</span> развивает мелкую моторику - это не то же самое, что “возить”
 					пальцем по экрану! Перемещение пальцев и
 					маленькие кнопки помогают улучшить координацию движений и тренируют руки.</p>
 			</div>
-			<div class="sect3__item">
+			<div class="sect3__item wow zoomIn">
 				<img src="img/block_4_2.png" alt="">
 				<p>Снижает негативное влияние на зрение. Благодаря <span class="prod">UltimateControl</span> экран смартфона
 					будет дальше от глаз юного игрока.</p>
 			</div>
-			<div class="sect3__item">
+			<div class="sect3__item wow zoomIn">
 				<img src="img/block_4_3.png" alt="">
 				<p><span class="prod">UltimateControl</span> - отличный повод похвастаться перед друзьями. К чему лукавить,
 					каждый родитель хочет, чтобы у его
@@ -261,15 +261,15 @@
 			<p>В наличие осталось всего 19 штук, следующая поставка - через месяц. Не оставляйте своего ребенка без крутого
 				подарка!</p>
 			<div class="sect5__list">
-				<div class="sect__item">
+				<div class="sect__item wow fadeInLeft">
 					<img src="img/ico1.svg" alt="">
 					<p>Оставьте заявку на нашем сайте</p>
 				</div>
-				<div class="sect__item">
+				<div class="sect__item wow fadeInLeft" data-wow-delay="0.5s">
 					<img src="img/ico2.svg" alt="">
 					<p>Мы перезвоним вам в течение 5 минут для подтверждения заказа</p>
 				</div>
-				<div class="sect__item">
+				<div class="sect__item wow fadeInLeft" data-wow-delay="1s">
 					<img src="img/ico3.svg" alt="">
 					<p>Доставим товар курьером за 3-7 дней</p>
 				</div>
@@ -293,21 +293,21 @@
 			<p>ЛУЧШИЙ ПОДАРОК <br> РЕБЕНКУ НА НОВЫЙ ГОД!</p>
 		</div>
 		<div class="main__builets">
-			<div class="main__item">
+			<div class="main__item wow fadeInLeft">
 				<img src="img/icon_1.svg" alt="">
 				<p>Совместим со всеми <br> устройствами</p>
 			</div>
-			<div class="main__item">
+			<div class="main__item wow fadeInLeft" data-wow-delay="0.5s">
 				<img src="img/icon_2.svg" alt="">
 				<p>Гарантия качества</p>
 			</div>
-			<div class="main__item">
+			<div class="main__item wow fadeInLeft" data-wow-delay="1s">
 				<img src="img/icon_3.svg" alt="">
 				<p>Оплата при получении</p>
 			</div>
 		</div>
 	</header>
-	<div class="offer">
+	<div class="offer wow fadeInUp">
 		<div class="offer__title">
 			Заполни форму <br>
 			и получи 50% скидку
@@ -325,7 +325,18 @@
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
 	<script src="libs/swiper/swiper.min.js"></script>
 	<script src="js/common.js"></script>
-
+	<script src="libs/wow.js"></script>
+	<script>
+		new WOW().init();
+		document.querySelectorAll('.content p').forEach(item => {
+			item.classList.add('wow')
+			item.classList.add('fadeIn')
+		})
+		document.querySelectorAll('.heading').forEach(item => {
+			item.classList.add('wow')
+			item.classList.add('fadeInUp')
+		})
+	</script>
 </body>
 
 </html>
